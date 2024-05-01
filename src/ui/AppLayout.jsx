@@ -1,5 +1,19 @@
+import { Outlet } from "react-router-dom";
+import Header from "../features/header/Header";
+import Search from "../features/header/Search";
+import Footer from "./Footer";
+
 function AppLayout() {
-  return <div>app layout</div>;
+  return (
+    <div className="layout">
+      <Header />
+      <Search />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default AppLayout;
