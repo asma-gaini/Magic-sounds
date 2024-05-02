@@ -1,15 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
-function Login() {
+function CreateAccount() {
   const [username, SetUsername] = useState("");
   const [email, SetEmail] = useState("");
-  const [passWord, SetPassword] = useState("");
 
   return (
     <div>
       <form>
-        <h3>Login</h3>
+        <h3>Create</h3>
         <div>
           <label htmlFor="username">🧑‍💼Username: </label>
           <input
@@ -32,25 +30,10 @@ function Login() {
             required
           />
         </div>
-        <div>
-          <label htmlFor="passWord">🔑Password: </label>
-          <input
-            type="password"
-            id="passWord"
-            placeholder="passWord"
-            onChange={(e) => SetPassword(e.target.value)}
-            value={passWord}
-            required
-          />
-        </div>
-        <div>
-          <Link to="/login/create">Creat new account</Link>
-          <a>Forget password?</a>
-        </div>
-        <button>send</button>
+        <button>Create</button>
       </form>
     </div>
   );
 }
 
-export default Login;
+export default CreateAccount;
