@@ -36,3 +36,26 @@ body {
     background-position: 0% 50%, 50% 50%, 100% 100%;
   }
 }
+
+.musicCover {
+  width: 200px;
+  border-radius: 10%;
+}
+
+.playButton {
+  background: none;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.subTitle {
+  margin-top: -1em;
+  color: #4f4f4f;
+}
+
+@media (max-width: 900px) {
+  .component {
+    width: 50%;
+  }
+}

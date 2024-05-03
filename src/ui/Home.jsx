@@ -1,5 +1,11 @@
+import Music from "../features/playList/Music";
+
 function Home() {
-  return <div>Majic sounds</div>;
+  return (
+    <div>
+      <Music />
+    </div>
+  );
 }
 
 export default Home;
